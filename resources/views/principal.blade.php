@@ -7,7 +7,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Tlapatilistli</title>
+        <title>Tlapa</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="img/logo.jpg" />
         <!-- Font Awesome icons (free version)-->
