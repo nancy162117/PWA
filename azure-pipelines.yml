@@ -25,30 +25,11 @@ steps:
     php -version
   displayName: 'Use PHP version $(phpVersion)'
 
-  
+
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
-
-- task: gulp@1
-  displayName: 'Run gulp tasks'
-
-- script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
-  displayName: 'Write build info'
-  workingDirectory: PWA/wwwroot
-
-- task: DotNetCoreCLI@2
-  displayName: 'Restore project dependencies'
-  inputs:
-    command: 'restore'
-    projects: '**/*.csproj'
-
-- task: DotNetCoreCLI@2
-  displayName: 'Build the project - Release'
-  inputs:
-    command: 'build'
-    arguments: '--no-restore --configuration Release'
-    projects: '**/*.csproj'
-
+  
+  
 - task: DotNetCoreCLI@2
   displayName: 'Publish the project - Release'
   inputs:
