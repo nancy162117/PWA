@@ -27,7 +27,7 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
-- task: artefifact
+- task: artefifact@2
   displayName: 'Publish the project - Release'
   inputs:
     command: 'publish'
