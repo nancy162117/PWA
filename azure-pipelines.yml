@@ -13,6 +13,7 @@ pool:
 
 variables:
   phpVersion: 7.2
+  Build.ArtifactStagingDirectory: https://github.com/nancy162117/PWA.git
 
 steps:
 - script: |
