@@ -183,48 +183,6 @@
                 </div>
             </section>
         </div>
-        <!-- Planes-->
-        <section class="page-section" id="planes">
-            
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Planes</h2>
-                </div>
-               
-            <div id="pricing" class="pricing">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="pricing_box">
-                                <h3>Gratuito</h3>
-                                <span>$<strong class="white_bold">0</strong></span>
-                                <p></p>
-                                <a class="SelectPlan" href="{{route('register.index')}}">Seleccionar plan</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="pricing_box_cross">
-                                <h3>Plus</h3>
-                                <span>$<strong class="white_bold">20</strong></span>
-                                <p></p>
-                                <a class="SelectPlan" href="{{route('pago')}}">Seleccionar plan</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="pricing_box">
-                                <h3>Turbo</h3>
-                                <span>$<strong class="white_bold">30</strong></span>
-                                <p></p>
-                                <a class="SelectPlan" href="{{route('pago')}}">Seleccionar plan</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            
-        </section>
-        
         <!-- Team-->
         <div class="pricing_box_cross"><br><br>
         <section class="page-section bg-light" id="team">
