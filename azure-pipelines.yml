@@ -14,8 +14,7 @@ pool:
 variables:
   phpVersion: 7.2
   buildConfiguration: 'Release'
-  Build.ArtifactStagingDirectory: https://github.com/nancy162117/PWA.git
-  
+
 steps:
 - script: |
     sudo update-alternatives --set php /usr/bin/php$(phpVersion)
