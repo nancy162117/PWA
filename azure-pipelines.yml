@@ -13,8 +13,9 @@ pool:
 
 variables:
   phpVersion: 7.2
+  buildConfiguration: 'Release'
   Build.ArtifactStagingDirectory: https://github.com/nancy162117/PWA.git
-
+  
 steps:
 - script: |
     sudo update-alternatives --set php /usr/bin/php$(phpVersion)
@@ -25,18 +26,6 @@ steps:
     php -version
   displayName: 'Use PHP version $(phpVersion)'
 
+  
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
-
-- task: DotNetCoreCLI@2
-  displayName: 'Publish the project - Release'
-  inputs:
-    command: 'publish'
-    projects: '**/*.csproj'
-    publishWebProjects: false
-    arguments: '--no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release'
-    zipAfterPublish: true
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
-  condition: succeeded()
